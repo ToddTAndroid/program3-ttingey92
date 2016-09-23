@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.math.BigDecimal;
 
@@ -465,7 +466,11 @@ public class CalcFragment extends Fragment {
                             ans = num1 - num2;
                             break;
                         case "divide":
-                            ans = num1/num2;
+                            if(num2 != 0){
+                                ans = num1/num2;
+                            } else {
+                                Toast.makeText(getActivity(), "Cannot divide by zero", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case "times":
                             ans = num1 * num2;
