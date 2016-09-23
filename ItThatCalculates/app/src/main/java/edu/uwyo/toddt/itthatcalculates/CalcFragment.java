@@ -247,7 +247,12 @@ public class CalcFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(opPress.equals(false)){
-                    num1 = Double.parseDouble(numEntry.getText().toString());
+                    String tmp = numEntry.getText().toString();
+                    if(tmp.equals("")){
+                        num1 = 0;
+                    } else{
+                        num1 = Double.parseDouble(tmp);
+                    }
                     opPress = true;
                     op = "add";
                 }
@@ -265,7 +270,12 @@ public class CalcFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(opPress.equals(false)){
-                    num1 = Double.parseDouble(numEntry.getText().toString());
+                    String tmp = numEntry.getText().toString();
+                    if(tmp.equals("")){
+                        num1 = 0;
+                    } else{
+                        num1 = Double.parseDouble(tmp);
+                    }
                     opPress = true;
                     op = "sub";
                 }
@@ -283,7 +293,12 @@ public class CalcFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(opPress.equals(false)){
-                    num1 = Double.parseDouble(numEntry.getText().toString());
+                    String tmp = numEntry.getText().toString();
+                    if(tmp.equals("")){
+                        num1 = 0;
+                    } else{
+                        num1 = Double.parseDouble(tmp);
+                    }
                     opPress = true;
                     op = "divide";
                 }
@@ -301,7 +316,12 @@ public class CalcFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(opPress.equals(false)){
-                    num1 = Double.parseDouble(numEntry.getText().toString());
+                    String tmp = numEntry.getText().toString();
+                    if(tmp.equals("")){
+                        num1 = 0;
+                    } else{
+                        num1 = Double.parseDouble(tmp);
+                    }
                     opPress = true;
                     op = "times";
                 }
@@ -319,7 +339,12 @@ public class CalcFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(opPress.equals(false)){
-                    num1 = Double.parseDouble(numEntry.getText().toString());
+                    String tmp = numEntry.getText().toString();
+                    if(tmp.equals("")){
+                        num1 = 0;
+                    } else{
+                        num1 = Double.parseDouble(tmp);
+                    }
                     opPress = true;
                     op = "pow";
                 }
@@ -364,9 +389,15 @@ public class CalcFragment extends Fragment {
                     opPress = false;
                 }
 
-                double num = Double.parseDouble(numEntry.getText().toString());
+                double num;
+                String tmp = numEntry.getText().toString();
+                if(tmp.equals("")){
+                    num = 0;
+                } else{
+                    num = Double.parseDouble(tmp);
+                }
                 num = num * (-1);
-                String tmp = Double.toString(num);
+                tmp = Double.toString(num);
                 numEntry.setText(tmp);
 
 
