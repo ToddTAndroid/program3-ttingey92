@@ -1,9 +1,14 @@
-# Program # X
-Name:  
-Cosc 5730 or 4730
+# Program # 3
+Name:  Todd Tingey
+Cosc 4730
 
 Description:  (how to run the program, phone/emulator screen size, android version ie 7.0)
 
+	Open app and use number and operator buttons to calculate values. 
+	"C" will clear values and operations. "CE" will just clear the current entry.
+
+	Ran on emulator default, Nexus 5X or Samsung Galaxy Note 5, 5.7"(Marshmallow 6.0.1).
+
 Anything that doesn't work:
 
-
+	Everything is working from my tests.  
