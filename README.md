@@ -12,3 +12,12 @@ Description:  (how to run the program, phone/emulator screen size, android versi
 Anything that doesn't work:
 
 	Everything is working from my tests.  
+
+
+Grade
+===
+**Your grade:** 45/50
+
+* This: "5+2+3=", yields "5.0". -5 points
+* Nice Pikachu
+
